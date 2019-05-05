@@ -1,0 +1,123 @@
+#map{ 
+    height: 100% 
+}
+.leaflet-container 
+{
+    background: #f3f3f3;
+}
+.leaflet-tooltip{
+    opacity: 0.78;
+}
+.tooltip {
+
+    background: white;
+    border: 0px ;
+    font-weight: 600;
+    color: black;
+    box-shadow: none;
+    opacity: 0.7;
+    font-size:small;
+    font-family: sans-serif;
+
+}
+.directions{
+/*height: 40vh;*/
+margin-left: 10px;
+padding:20px;
+background: white;
+min-width:20%;
+/*min-height: 50%;*/
+top:10px;
+left:10px;
+z-index: 500;
+opacity: 0.9;
+position: fixed;
+border-radius: 10px;
+box-shadow: 0 6px 6px -6px #000000;
+}
+.qrcode{
+width: 100px;
+margin: 10px;
+padding:2px;
+background: white;
+bottom:10px;
+right: 10px;
+z-index: 500;
+opacity: 0.9;
+position: fixed;
+border-radius: 10px;
+}
+.leaflet-control{
+    position: fixed;
+    bottom:10px;
+}
+
+.leaflet-popup-content-wrapper {
+    background-color: transparent;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    opacity: 1;
+    color: black;
+    font-weight: 700;
+    box-shadow: none;
+    /*text-shadow: -1px 0 #4A5E34, 0 1px #4A5E34, 1px 0 #4A5E34, 0 -1px #4A5E34;*/
+}
+
+.leaflet-popup-tip {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label{
+    color:#FF0000;
+}
+.mdl-textfield__label:after{
+    background-color: #39908b;
+}
+.getmdl-select .mdl-menu__container .mdl-menu{
+    max-height: 250px;
+    overflow-y: scroll;
+}
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab{
+    background-color: rgb(76, 181, 175);
+}
+a{
+    font-weight: 700;
+}
+
+.info{
+    /*height: 40vh;*/
+    margin-right: 10px;
+    padding:20px;
+    background: white;
+    max-width:30%;
+    /*width:50%;*/
+    min-height: 60%;
+    top:10px;
+    right:10px;
+    z-index: 500;
+    opacity: 0.9;
+    position: fixed;
+    border-radius: 10px;
+    box-shadow: 0 6px 6px -6px #000000;
+}
+h2,h3,h6{
+    margin: 0px;
+}
+.mdl-button--fab.mdl-button--colored{
+    background: rgb(76, 181, 175);
+    width: 40px;
+    height: 40px;
+    min-width: initial;
+    margin-bottom: 10px;
+    margin-left: 10px;
+
+}
+.mdl-button--fab.mdl-button--colored:hover{
+
+    background:rgb(48, 115, 111);;    
+}
+.mdl-textfield__input{
+    font-size: 24px;
+}

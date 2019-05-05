@@ -1,0 +1,23 @@
+{
+  "name": "digital-map-project",
+  "version": "1.0.0",
+  "description": "here index.html is the final output file",
+  "main": "server_script.js",
+  "scripts": {
+    "test": "nodemon server_script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IIIT-Delhi/Digital-map-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IIIT-Delhi/Digital-map-project/issues"
+  },
+  "homepage": "https://github.com/IIIT-Delhi/Digital-map-project#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "ip": "^1.1.5"
+  }
+}

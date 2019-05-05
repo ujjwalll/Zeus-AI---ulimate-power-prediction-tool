@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>IIIT Delhi, Digital Map</title>
+    <link rel="icon" type="image/ico" href="images/IIITD-square.png" />
+
+    <!-- MDL CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="css/getmdl-select.min.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>
+
+    <!-- Leaflet.js -->
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+    integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+    crossorigin=""></script>
+
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+
+    <style>
+        body{
+            font-family: 'Roboto', sans-serif;
+
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Directions Card -->
+    <div class="directions">
+        
+        <!-- IIITD Image -->
+        <div class="IIITD">
+            <img src="images/IIITD-nobg.png" style="width: auto;height: 38px;">
+        </div>
+
+        <!-- Start Point List -->
+        <div id="start" style="width:100%;padding-top: 10px;">
+          	<ul>
+ 				 <li style="color:#FF0000">More than Usual</span></li>
+  				<li style="color:#00FF00">Moderate</span></li>
+  				<li style="color:#0000FF">Less than the usual</span></li>
+			</ul>  
+        </div>
+        <!-- Destination List -->
+        
+
+        <!-- Button -->
+       
+    </div>
+    <!--
+    <div class="info">
+        <!- - Heading - ->
+        <div style="width:100%">
+            <h3>Welcome to Indraprastha Institute of Information Technology<h3>
+        </div>
+        <p style="padding-top: 20px;">
+            Select a starting point and a destination to see the route in the campus.
+            <br>
+        </p>
+        <div>
+            
+        <!- - Simple Textfield - ->
+        <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" id="sample1">
+        <label class="mdl-textfield__label" for="sample1">
+            <!- - <i class="material-icons">search</i> - ->Search for buildings, classrooms, labs ..
+        </label>
+        </div>
+              <!- - Colored FAB button with ripple - ->
+        <button type="submit" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+        <i class="material-icons">search</i>
+        </button>
+            </form>
+
+        </div>
+    </div>
+    -->
+
+
+
+
+
+
+    <div class="qrcode">
+        <img src="images/qrcode.png" style="max-width:100%;max-height:100%;">
+        <!-- Scan code to open website on your device -->
+    </div>
+    <div id="map"></div>
+   
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/client.js"></script>
+
+    <!-- MDL -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script type="text/javascript" src="js/getmdl-select.min.js"></script>
+    <script type="text/javascript">
+        function displayPath(){
+            start=document.getElementById("start_field").value;
+            destination=document.getElementById("destination_field").value;
+            console.log(start);
+            console.log(destination);
+            displayDirections(start,destination);
+        }
+
+    </script>
+</body>
+</html>

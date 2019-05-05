@@ -1,0 +1,49 @@
+#view-source {
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 0;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  z-index: 900;
+}
+.mdl-layout__drawer-button>i{
+  padding-top: 10px;
+}
+.mdl-button--raised.mdl-button--colored {
+background: #39AEA8;
+}
+/*card things*/
+.demo-card-wide.mdl-card {
+    width: 512px;
+}
+#Lecture-Block{
+  background: url('/images/lecture-block.jpg') center / cover;
+}
+#Lecture-Halls{
+  background: url('/images/placeholder.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__title{
+  color: #fff;
+  height: 176px;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+.mdl-button--fab.mdl-button--colored {
+background: #37474f;
+}
+.mdl-button--fab.mdl-button--colored:hover {
+background: #263238;
+}
+#floor{
+  margin:8px;
+  padding: 8px;
+  background-color:#37474f;
+  border-radius: 8px; 
+  font-size: large;
+  color: #f5f5f5; 
+}
+#icon{
+  width: 30px;
+}
